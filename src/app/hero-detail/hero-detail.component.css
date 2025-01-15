@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    display: grid;
+    justify-content: center;
+    place-content: center;
+    flex-direction: column;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #eee;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    border-bottom: 2px solid #ddd;
+}
+
