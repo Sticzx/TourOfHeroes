@@ -44,15 +44,3 @@ button:hover, a:hover {
 .nav > li {
     transition: ease-out 0.3s;
 }
-
-a {
-    color: black;
-}
-
-.nav {
-    display: flex;
-    display: grid;
-    justify-content: center;
-    place-content: center;
-    margin-top: 3rem;   
-}
