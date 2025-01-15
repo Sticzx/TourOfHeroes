@@ -1,66 +1,69 @@
-/* HeroesComponent's private CSS styles */
-.heroes {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 15em;
-  }
+h1{
+  padding: 10px;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 30px;
+}
+button{
+  height: 60px;
+  width: 260px;
+  font-size: 19px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0px 0px;
+  padding-inline: 0px;
+  background-color: #ffffff3b;
+  border-bottom: 3px solid #ffffff79;
   
-  .heroes li {
-    display: flex;
-  }
-  
-  .heroes button {
-    flex: 1;
-    cursor: pointer;
-    position: relative;
-    left: 0;
-    background-color: #EEE;
-    margin: .5em;
-    padding: 0;
-    border-radius: 4px;
-    display: flex;
-    align-items: stretch;
-    height: 1.8em;
-  }
-  
-  .heroes button:hover {
-    color: #2c3a41;
-    background-color: #e6e6e6;
-    left: .1em;
-  }
-  
-  .heroes button:active {
-    background-color: #525252;
-    color: #fafafa;
-  }
-  
-  .heroes button.selected {
-    background-color: black;
-    color: white;
-  }
-  
-  .heroes button.selected:hover {
-    background-color: #505050;
-    color: white;
-  }
-  
-  .heroes button.selected:active {
-    background-color: black;
-    color: white;
-  }
-  
-  .heroes .badge {
-    display: inline-block;
-    font-size: small;
-    color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color: #405061;
-    line-height: 1em;
-    margin-right: .8em;
-    border-radius: 4px 0 0 4px;
-  }
-  
-  .heroes .name {
-    align-self: center;
-  }
+
+}
+.badge-parent{
+  position: relative;
+  flex-basis: 23%;
+  height: 100%;
+  width: 100%;
+}
+.badge{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff79;
+  filter: blur(10px);
+  width: 100%;
+  height: 100%;
+}
+p{
+  filter: blur(0px);
+  text-shadow: 1px 1px 1px #4c4c4c;
+  color: var(--main-blue);
+
+}
+.name{
+  flex-basis: 67%;
+  color:#3a3a3a;
+  padding: 0;
+  padding-inline: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover{
+  border-bottom-width: 7px;
+  background-color: #ffffffa9;
+  transition: all 0.25s ease;
+}
+button:hover .name{
+  color: var(--main-blue);
+}
