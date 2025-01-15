@@ -1,4 +1,4 @@
-<h2>Top heroes</h2>
+<h1>Top heroes</h1>
 <ul class="heroes">
     <li *ngFor="let hero of heroes">
       <button type="button" (click)="onSelect(hero)">
@@ -8,4 +8,8 @@
   </ul>
 
   <app-hero-detail [hero]="selectedHero"></app-hero-detail>
-  <a routerLink="/dashboard" routerLinkActive="active">back</a>
+  <ul class="nav">
+    <li>
+      <a routerLink="/dashboard" routerLinkActive="active">back</a>
+    </li>
+  </ul>
