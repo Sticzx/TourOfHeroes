@@ -36,6 +36,15 @@ button:hover, a:hover {
     transition: ease-in 0.3s;
 }
 
+.nav > li:hover {
+    scale: 1.1;
+    transition: ease-in 0.3s;
+}
+
+.nav > li {
+    transition: ease-out 0.3s;
+}
+
 a {
     color: black;
 }
